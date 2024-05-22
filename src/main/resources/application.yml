@@ -1,0 +1,15 @@
+server:
+#  port: 8761 #|| Default Port
+  port: 8700
+  
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8700/eureka  
+#        defaultZone: http://151.106.39.5:8700/eureka
+#         defaultZone: http://8.213.20.249:8700/eureka    
+  server:
+    wait-time-in-ms-when-sync-empty: 0
+    
